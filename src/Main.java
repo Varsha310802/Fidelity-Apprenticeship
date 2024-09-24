@@ -1,22 +1,46 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+import java.util.*;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.util.*;
 public class Main {
     public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    Mobile p1=new Mobile();
-    System.out.println("enter product ud");
-    int pid=sc.nextInt();
-    System.out.println("enter product name");
-    String pname=sc.next();
-    System.out.println("enter product price");
-    int pprice=sc.nextInt();
-    System.out.println("Enter warranty");
-    int warranty=sc.nextInt();
-    System.out.println("enter network type");
-    String network=sc.next();
-        p1.Initialize(pid,pname,pprice,warranty,network);
-    p1.Display();
-
+        Scanner sc=new Scanner(System.in);
+    float marks=sc.nextFloat();
+    String grade;
+    if(marks>=90){
+        System.out.println("A Grade");
+        grade="A";
     }
+    else if(marks<90 && marks>=80){
+        System.out.println("B Grade");
+        grade="B";
+    }
+    else if(marks<80 && marks>=70){
+        System.out.println("C Grade");
+        grade="C";
+    }
+    else if(marks<70 && marks>=60){
+        System.out.println("D Grade");
+        grade="D";
+    }
+    else {
+        System.out.println("F Grade");
+        grade="F";
+    }
+    switch (grade) {
+        case "A":
+            System.out.println("Excellent");
+            break;
+        case "B":
+            System.out.println("Great");
+            break;
+        case "C":
+            System.out.println("Good");
+            break;
+        case "D":
+            System.out.println("Not Bad");
+            break;
+        case "F":
+            System.out.println("Poor");
+            break;
+    }
+}
 }
