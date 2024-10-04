@@ -1,0 +1,19 @@
+body{
+    background-color: #00ffff;
+    font-family:Arial;
+    font-size:12px;
+
+}
+h1{
+    font-size:2.5em;
+}
+dd{
+    font-size: 1.5em;
+}
+p[title]{
+    color:#FF0F70;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.5em;
+    font-style: italic;
+}

@@ -1,0 +1,62 @@
+
+h1{
+    font-size:2em;
+    margin-bottom: 20px;
+    color:darkblue;
+    text-align: center;
+}
+#calci{
+
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+.input{
+    margin-bottom:15px;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.input,select{
+    margin-left: 10px;
+}
+label{
+    margin-left: 10px;
+}
+input,select{
+    margin: 10px 0;
+    padding :5px;
+    font-size: 1em;
+    text-align: center;
+    width: 200px;
+}
+button{
+    margin-left: 10px;
+    background:none;
+    border:none;
+    padding:0;
+    margin: 10px 10px;
+}
+button img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    cursor:pointer;
+    padding: 25px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+#option{
+    padding:5px;
+    width: 200px;
+}
