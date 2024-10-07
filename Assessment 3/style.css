@@ -1,0 +1,183 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+}
+.title{
+    margin-left: 2%;
+    padding-right: 35%;
+}
+header{
+    background-color: #2f4c48;
+    color:white;
+    padding:5px 0;
+    text-align: center;display: flex;
+}
+
+header .logo img{
+    width:80px;
+    height: 70px;
+    border-radius: 50%;
+    padding:5%;
+    align-items: center;
+}
+header nav ul{
+    list-style:none;
+    padding:0;
+
+}
+header nav ul li{
+    display: inline;
+    margin:0 15px;
+    
+}
+header nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 45%;
+    
+}
+.navs{
+    margin-top: 9%;
+    
+}
+
+main {
+    padding: 20px;
+    background-image: url(multimedia.jpg);
+    background-size: cover;
+    
+}
+
+main article {
+    margin-bottom: 40px;
+}
+
+main h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+audio{
+    display: block;
+    margin:20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+video{
+    display: block;
+    margin:20px auto;
+    width:100%;
+    max-width: 800px;
+}
+iframe{
+
+        display: block;
+        margin:20px auto;
+        width:100%;
+        max-width: 800px;
+    }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+.image-grid{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-grid img:hover{
+    transform:scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+form {
+    margin-top: 20px;
+    
+}
+.forms{
+    background-color: #baa888;
+    
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    margin-left: 3%;
+    width: 80em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
